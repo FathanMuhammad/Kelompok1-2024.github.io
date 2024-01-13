@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding-top: 80px; /* added space for fixed header */
+}
+
+.header {
+  padding: 2rem 9%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.header .logo {
+  color: #333; /* changed for visibility against white background */
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.doctor-profile .container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.profile-header {
+  text-align: center;
+  padding-bottom: 20px;
+  }
+  
+  .profile-header .doctor-photo {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  }
+  
+  .profile-header h1 {
+  margin-bottom: 5px;
+  color: #333;
+  }
+  
+  .profile-header p {
+  color: #6c63ff;
+  font-weight: bold;
+  }
+  
+  .profile-details h2 {
+  color: #333;
+  margin-bottom: 10px;
+  }
+  
+  .profile-details p, .profile-details ul {
+  margin-bottom: 20px;
+  }
+  
+  .profile-details ul {
+  list-style: disc;
+  margin-left: 20px;
+  }
+  
+  @media (max-width: 768px) {
+  .doctor-profile .container {
+  width: 90%;
+  padding: 15px;
+  }
+
+  .profile-header .doctor-photo {
+    max-width: 150px;
+}
+  }
